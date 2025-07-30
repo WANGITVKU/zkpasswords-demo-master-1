@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ZK Auth - Đăng ký</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-blue-300 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md mx-auto">
+    <div class="flex flex-col items-center mb-8">
+      <span class="inline-flex items-center justify-center bg-blue-200 rounded-full p-3 mb-3 shadow">
+        <svg class="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 11a4 4 0 100-8 4 4 0 000 8zm8 4v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6M16 21v-2a4 4 0 00-8 0v2" />
+        </svg>
+      </span>
+      <a href="/" class="mb-2 block group">
+  <h1 class="text-3xl font-bold text-blue-800 transition-colors group-hover:text-blue-600 cursor-pointer">
+    ZK Auth
+  </h1>
+</a>
+      <p class="text-gray-500 text-sm mb-2 text-center">Đăng ký an toàn bằng Zero-Knowledge Proof!</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg px-8 pt-8 pb-6 mb-4">
+      <div class="mb-5">
+        <label for="emailDefine" class="block text-gray-700 text-base font-semibold mb-2">Email</label>
+        <input type="text" id="emailDefine" name="emailDefine" autocomplete="username" 
+               class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-200 focus:shadow-outline">
+      </div>
+      <div class="mb-8">
+        <label for="passwordDefine" class="block text-gray-700 text-base font-semibold mb-2">Mật khẩu</label>
+        <input type="password" id="passwordDefine" name="passwordDefine" autocomplete="new-password" 
+               class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-200 focus:shadow-outline">
+        <span class="text-xs text-gray-400">Ít nhất 12 ký tự, có chữ hoa, số, ký tự đặc biệt</span>
+      </div>
+      <button id="setPassword" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-blue-300">
+        Đăng ký
+      </button>
+      <div class="mt-6 text-center text-sm">
+        <span class="text-gray-500">Đã có tài khoản? </span>
+        <a href="/login" class="text-blue-700 underline hover:text-blue-900 font-medium">Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>

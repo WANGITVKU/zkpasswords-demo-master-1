@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ZK Auth</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-200 via-white to-blue-400 min-h-screen flex items-center justify-center">
+  <div class="bg-white/90 rounded-3xl shadow-2xl px-12 py-10 flex flex-col items-center max-w-md w-full transition-all duration-300 hover:shadow-blue-300">
+    <div class="mb-8 flex flex-col items-center">
+      <div class="bg-blue-100 rounded-full p-4 mb-3 shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z"/>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-extrabold text-blue-900 mb-2 tracking-tight">Đăng nhập ẩn danh</h1>
+      <h1 class="text-4xl font-extrabold text-blue-900 mb-2 tracking-tight">ZKP</h1>
+      <p class="text-gray-500 text-lg text-center max-w-xs">Xác thực an toàn, không lưu mật khẩu, sử dụng Zero-Knowledge Proof!</p>
+    </div>
+
+    <div class="flex flex-col space-y-4 w-full">
+      <a href="/signup"
+         class="group text-2xl flex items-center justify-center bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 rounded-xl shadow-lg transition transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21v-2a4 4 0 00-8 0v2M12 11a4 4 0 100-8 4 4 0 000 8zm8 4v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6" />
+        </svg>
+        Đăng ký tài khoản
+      </a>
+      <a href="/login"
+         class="group text-2xl flex items-center justify-center bg-blue-100 hover:bg-blue-200 text-blue-800 font-bold py-3 rounded-xl shadow transition transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-600 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z"/>
+        </svg>
+        Đăng nhập
+      </a>
+    </div>
+    <div class="mt-8 text-gray-400 text-xs text-center">
+      Made with <span class="text-pink-500 font-bold">♥</span> & Zero-Knowledge Proof
+    </div>
+  </div>
+  <script src="password.js"></script>
+</body>
+
+</html>

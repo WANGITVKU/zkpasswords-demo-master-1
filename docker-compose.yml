@@ -1,0 +1,11 @@
+version: "3"
+services:
+  zk:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    entrypoint: ["tail", "-f", "/dev/null"]
+

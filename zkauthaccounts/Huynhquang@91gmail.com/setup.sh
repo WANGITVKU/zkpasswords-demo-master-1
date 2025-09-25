@@ -7,13 +7,11 @@ pragma circom 2.1.6;
 
 include "../../node_modules/circomlib/circuits/comparators.circom";
 
-
-
 template Main() {
     signal input attempt;
     signal output isEqual;
 
-    var password = 104225205502723520562743533725157420670651613945358849108150622276267474988320;
+    var password = 81396309439091760166839656771824628288596689011616699167506225152589261071478;
     component eqChecker = IsEqual();
     attempt ==> eqChecker.in[0];
     password ==> eqChecker.in[1];
@@ -25,7 +23,7 @@ component main = Main();
 EOT
 
 echo "Compiling the circuit..."
-circom circuit.circom --r1cs --wasm --sym 
+circom circuit.circom --r1cs --wasm --sym
 echo "Circuit compiled."
 
 echo "Exporting the R1CS to JSON..."

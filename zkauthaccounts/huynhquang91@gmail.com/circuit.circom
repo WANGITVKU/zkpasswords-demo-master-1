@@ -2,13 +2,11 @@ pragma circom 2.1.6;
 
 include "../../node_modules/circomlib/circuits/comparators.circom";
 
-
-
 template Main() {
     signal input attempt;
     signal output isEqual;
 
-    var password = 47979501570776611915155295813191927682205574806297975375101892458173133995385;
+    var password = 48311739799044587689509493908578382258494791763090173531371411066731418975446;
     component eqChecker = IsEqual();
     attempt ==> eqChecker.in[0];
     password ==> eqChecker.in[1];

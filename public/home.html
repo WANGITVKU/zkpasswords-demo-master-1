@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Secure Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      opacity: 0.8;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 10px 30px;
+      font-size: 16px;
+      background-color: #00c9a7;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00a386;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🔐</div>
+    <h1>Welcome to ZK Secure Zone</h1>
+    <p>You have successfully logged in using Zero-Knowledge Authentication.</p>
+    <button class="btn" onclick="logout()">Log out</button>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
